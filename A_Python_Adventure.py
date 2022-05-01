@@ -16,7 +16,7 @@
 # 'them'? Do you know why? May require knowledge of actual python 'lore'
 
 purse = 1000
-freelancers = {'name': 'freelancing Shop', 'brian': 70, 'black knight': 20, 'biccus diccus': 100, 'grim reaper': 500,
+freelancers = {'name': 'Freelancing Shop', 'brian': 70, 'black knight': 20, 'biccus diccus': 100, 'grim reaper': 500,
                'minstrel': -15}
 antiques = {'name': 'Antique Shop', 'french castle': 400,'german joke': 5, 'wooden grail': 3, 'scythe': 150,
             'catapult': 75}
@@ -25,9 +25,10 @@ pet_shop = {'name': 'Pet Shop', 'blue parrot': 10, 'white rabbit': 5, 'newt': 2}
 print('Your village is being attacked by "a germanic tribe" and you need to run to each of the three stores and get ')
 print('the right thing from each to save your village, and probably some good looking girl or boy you want to marry. ')
 print('All prices in gold pieces excl. VAT... chop chop!! ze germanz are coming!')
-print(f'You have {purse} gold to make your purchases.')
+print(f'You have {purse} Gp to make your purchases.')
 
 cart = {}
+bought_items = ''
 for shop in (freelancers, antiques, pet_shop):
     print(f"Welcome to {shop['name']}!  You may \"exit\" the store if you do not want to purchase anything.")
     print(f"Today we have: ")
@@ -40,13 +41,14 @@ for shop in (freelancers, antiques, pet_shop):
     if buy_item == "exit":
         continue
     elif buy_item not in shop:
-        print(f"We do not have any {buy_item}. Please come again.")
+        print(f"The {shop['name']} does not have any {buy_item}. Please come again.")
+        continue
     else:
+        bought_items = bought_items + f': {buy_item} at {shop[buy_item]} Gp'
         cart.update({buy_item: shop.pop(buy_item)})
-bought_items = ", ".join(list(cart.keys()))
 sum_purchases = sum(cart.values())
 final_purse = purse - sum_purchases
-print(f'You purchased {bought_items}. You spent {sum_purchases} gold and have {final_purse} gold remaining. ')
+print(f'You purchased{bought_items}. You spent {sum_purchases} Gp and have {final_purse} Gp remaining.')
 print('Have a nice day of mayhem!')
 if cart == {'minstrel': -15, 'german joke': 5, 'white rabbit': 5}:
     print("Congratulations! You found the best possible solution. You made money and defeated the enemy with ease!")
