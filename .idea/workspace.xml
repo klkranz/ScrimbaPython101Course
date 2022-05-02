@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="A_Python_Adventure.py typo corrections - clean up">
+    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="A_Python_Adventure.py final touches on ver 1.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_Python_Adventure.py" beforeDir="false" afterPath="$PROJECT_DIR$/A_Python_Adventure.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651446535722</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="A_Python_Adventure.py final touches on ver 1.2">
+      <created>1651449378494</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651449378494</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +228,7 @@
     <MESSAGE value="added configuration files" />
     <MESSAGE value="A_Python_Adventure.py version 1.2 changes" />
     <MESSAGE value="A_Python_Adventure.py typo corrections - clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="A_Python_Adventure.py typo corrections - clean up" />
+    <MESSAGE value="A_Python_Adventure.py final touches on ver 1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="A_Python_Adventure.py final touches on ver 1.2" />
   </component>
 </project>
