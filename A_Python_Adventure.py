@@ -7,9 +7,11 @@
 # bought(typed)
 # Add purse with 1000 gold pieces and payment for the items during or at end of code and show a message about total
 # cost and how much gold you have left.
-# TODO Ver 1.3
+# Ver 1.3
 # print inventory before and after purchases as one department_store of stuff (combine inventories from all stores into
 # one...pretend Big Biz bought all the local stores, and want constant reporting for inventory management...)
+# Implemented for the purposes of the course, but commented out because the user doesn't need it. 
+# Useful for testing that the pop method was implemented correctly.
 # TODO Ver 1.4
 # random bug fix, 'browser compatibility', refactoring code..basically being lazy...stop scrolling TikTok/Facebook! ;-)
 # as in all games there is a special way to do this that actually makes money and solves the problem...can you find
@@ -30,10 +32,11 @@ print('the right thing from each to save your village, and probably some good lo
 print('All prices in gold pieces excl. VAT... chop chop!! ze germanz are coming!')
 # Ver 1.2 update - added description of how much they can spend
 print(f'You have {purse} Gp to make your purchases.')
+
 # Ver 1.3 update - added beginning of the day inventory report from all shops to the Big Biz
-beg_inv = {**freelancers, **antiques, **pet_shop}
-beg_inv.pop('name')
-print(f'Beginning of the day inventory report to Big Biz from all the shops in town: {beg_inv}')
+# beg_inv = {**freelancers, **antiques, **pet_shop}
+# beg_inv.pop('name')
+# print(f'Beginning of the day inventory report to Big Biz from all the shops in town: {sorted(beg_inv.items())}')
 
 # Create cart to keep track of items purchased from each shop and string format list of items for final report.
 cart = {}
@@ -73,7 +76,7 @@ print('Have a nice day of mayhem!')
 if cart == {'minstrel': -15, 'german joke': 5, 'white rabbit': 5}:
     print("Congratulations! You found the best possible solution. You made money and defeated the enemy with ease!")
 
-# Ver 1.3 update - added beginning of the day inventory report from all shops to the Big Biz
-end_inv = {**freelancers, **antiques, **pet_shop}
-end_inv.pop('name')
-print(f'End of the day inventory report to Big Biz from all the shops in town: {end_inv}')
+# Ver 1.3 update - added end of the day inventory report from all shops to the Big Biz
+# end_inv = {**freelancers, **antiques, **pet_shop}
+# end_inv.pop('name')
+# print(f'End of the day inventory report to Big Biz from all the shops in town: {sorted(end_inv.items())}')
