@@ -12,7 +12,11 @@
 # one...pretend Big Biz bought all the local stores, and want constant reporting for inventory management...)
 # Implemented for the purposes of the course, but commented out because the user doesn't need it. 
 # Useful for testing that the pop method was implemented correctly.
-# TODO Ver 1.4
+# Ver 1.4 - some changes I want to try
+# Generating a list for Big Biz of items to review as potential stock in future - list of items typed by the user
+# which were not included in the shop inventories.
+#
+# TODO Ver 1.5 - this was part of the original instructions with the course, but not explained so no idea how to do it.
 # random bug fix, 'browser compatibility', refactoring code..basically being lazy...stop scrolling TikTok/Facebook! ;-)
 # as in all games there is a special way to do this that actually makes money and solves the problem...can you find
 # 'them'? Do you know why? May require knowledge of actual python 'lore'
@@ -41,6 +45,8 @@ print(f'You have {purse} Gp to make your purchases.')
 # Create cart to keep track of items purchased from each shop and string format list of items for final report.
 cart = {}
 bought_items = ''
+# Ver 1.4 - adding list to track items requested but not in the inventory.
+# requested_items = []
 # Loop through each shop, asking user input of items they want to purchase.
 for shop in (freelancers, antiques, pet_shop):
     print(f"Welcome to {shop['name']}!  You may \"exit\" the store if you do not want to purchase anything.")
@@ -50,7 +56,7 @@ for shop in (freelancers, antiques, pet_shop):
         if key == 'name':
             continue
         else:
-            print(f"{key} costs {value}")
+            print(f"{key} costs {value}", end=", ")
     # Request input from user forcing it to lower case
     buy_item = input(f"What do you want to buy?: ").lower()
     if buy_item == "exit":
@@ -58,6 +64,7 @@ for shop in (freelancers, antiques, pet_shop):
         continue
     elif buy_item not in shop:
         # Ver 1.2 update - exit shop without purchase if user types something that isn't in the shop.
+        # requested_items.append(buy_item)
         print(f"The {shop['name']} does not have any {buy_item}. Please come again.")
         continue
     else:
@@ -80,3 +87,5 @@ if cart == {'minstrel': -15, 'german joke': 5, 'white rabbit': 5}:
 # end_inv = {**freelancers, **antiques, **pet_shop}
 # end_inv.pop('name')
 # print(f'End of the day inventory report to Big Biz from all the shops in town: {sorted(end_inv.items())}')
+# Ver 1.4 update - printing list of items requested that were not in the inventory.
+# print(f'These items need to be reviewed for inclusion in future inventory: {requested_items}.')
