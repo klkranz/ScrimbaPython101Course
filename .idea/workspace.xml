@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Lambda Exercise and crypto machine project">
-      <change afterPath="$PROJECT_DIR$/Project_Math_Tutor.py" afterDir="false" />
+    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Math Tutor Project added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Math_Tutor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Math_Tutor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652317551346</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Math Tutor Project added">
+      <created>1652645588192</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652645588192</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +280,7 @@
     <MESSAGE value="A_Python_Adventure.py Ver 1.3 update and fixed comments" />
     <MESSAGE value="A_Python_Adventure.py Ver 1.3 cleanup and commenting" />
     <MESSAGE value="Lambda Exercise and crypto machine project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lambda Exercise and crypto machine project" />
+    <MESSAGE value="Math Tutor Project added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Math Tutor Project added" />
   </component>
 </project>
