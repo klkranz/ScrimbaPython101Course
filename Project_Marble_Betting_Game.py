@@ -16,39 +16,48 @@
 import random
 
 # Create a function that pulls a random marble from the bag of marbles.
-def marble_draw(mode):
+def marble_draw(mode, user_bet):
     if mode == "hard":
-        bag = ["black", "green", "green", "green", "green", "green", "red", "red", "red", "white"]
+        bag = ("black", "green", "green", "green", "green", "green", "red", "red", "red", "white")
     else:
-        bag = ["green", "green", "green", "green", "green", "green", "red", "red", "red", "red"]
-    return random.choice(bag)
+        bag = ("green", "green", "green", "green", "green", "green", "red", "red", "red", "red")
+    marble = random.choice(bag)
+    if marble == "green":
+        result = user_bet
+    elif marble == "black":
+        result = user_bet * 10
+    elif marble == "white":
+        result = -user_bet * 5
+    else:
+        result = -user_bet
+    return marble, result
 
 # Bonus - give the user the option to play in hard mode.
+print("Let's play a little betting game. Each round a marble will be pulled from a bag and either add or subtract\n"
+      "from the amount of gold coins in your purse. In standard mode, there are 6 green marbles and 4 red marbles.\n"
+      "Green marbles add the amount you bet to your purse, and red marbles subtract the amount you bet from your \n"
+      "purse.  In hard mode, 1 black marble replaces a green but adds 10X what you bet to your purse, and 1 white\n"
+      "marble replaces a red marble but subtracts 5X what you bet from your purse. Ready to play?")
 game_mode = input("What game mode would you like to play? standard or hard: ").lower()
+start_purse = int(input("What would you like your starting purse to be (just hit enter to play with 1000): ") or "1000")
+rounds = int(input("How many rounds would you like to play (just hit enter to play a random number of rounds: ")
+             or random.randrange(3,51))
 
 # Create "purse" which will start at 1000 and change with each bet/draw round.
-purse = 1000
+purse = start_purse
 # Create a loop for a random number of rounds.
-for n in range(0, random.randrange(3,10)):
+for n in range(0, rounds):
     bet = int(input(f"For round {n + 1}, you have {purse} gold pieces in your purse. "
                     f"How much would you like to bet this round? "))
-    marble = marble_draw(game_mode)
-    if marble == "green":
-        purse += bet
-        print(f"You drew a {marble} marble and won {bet} gold pieces.")
-    elif marble == "black":
-        purse += bet * 10
-        print(f"You drew a {marble} marble and won {bet * 10} gold pieces.")
-    elif marble == "white":
-        purse -= bet * 5
-        print(f"You drew a {marble} marble and lost {bet * 5} gold pieces.")
-    else:
-        purse -= bet
-        print(f"You drew a {marble} marble and lost {bet} gold pieces.")
-    # Break the loop if purse drops below 500.
-    if purse <= 500:
-        break
+    draw, results = marble_draw(game_mode, bet)
     # Print results of each round.
+    print(f"This round a {draw} marble was pulled and added {results} to your gold pieces.")
+    # Add/Subtract amount designated by the marble from the user's purse.
+    purse += results
+    # Break the loop if purse drops below 500.
+    if purse <= 0.5 * start_purse:
+        print("Game Over - You lost over half of your gold pieces.")
+        break
 
 # At the end of the loop, they win if the purse is > 1000, break even if = 1000 and lose if < 1000.
 if purse > 1000:
