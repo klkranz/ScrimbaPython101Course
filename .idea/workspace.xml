@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Added Project_Marble_Betting_Game.py">
+    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Project_Marble_Betting_Game.py refactoring after seeing his solution, and asking for more input from user.">
+      <change afterPath="$PROJECT_DIR$/Project_EulerQ4part1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Marble_Betting_Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Marble_Betting_Game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +48,7 @@
       <recent name="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Project_Marble_Betting_Game">
-    <configuration name="DictionaryExercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course\DictionaryExercise.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Project_EulerQ4part1">
     <configuration name="DictionaryExercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,6 +112,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Project_EulerQ4part1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project_EulerQ4part1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Project_Marble_Betting_Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -177,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Project_EulerQ4part1" />
         <item itemvalue="Python.Project_Marble_Betting_Game" />
         <item itemvalue="Python.Project_Math_Tutor" />
         <item itemvalue="Python.Project_Crypto_Machine" />
         <item itemvalue="Python.LambdaFunctionsExercise" />
-        <item itemvalue="Python.DictionaryExercise" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652652461288</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Project_Marble_Betting_Game.py refactoring after seeing his solution, and asking for more input from user.">
+      <created>1652659313972</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652659313972</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +304,7 @@
     <MESSAGE value="Math Tutor Project added" />
     <MESSAGE value="Math Tutor Project adding his code for reference and refactoring to include time" />
     <MESSAGE value="Added Project_Marble_Betting_Game.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Project_Marble_Betting_Game.py" />
+    <MESSAGE value="Project_Marble_Betting_Game.py refactoring after seeing his solution, and asking for more input from user." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project_Marble_Betting_Game.py refactoring after seeing his solution, and asking for more input from user." />
   </component>
 </project>
