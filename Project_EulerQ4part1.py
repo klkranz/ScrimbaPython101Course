@@ -37,8 +37,12 @@ def palindrome(low_val, high_val):
     start_time = time.time()
     palindromes = []
     iterations = 0
+    reduction = 0
     for num_a in range(high_val, low_val - 1, -1):
-        for num_b in range(high_val, low_val - 1, -1):
+        new_high = high_val - reduction  
+        # Each time the second loop starts it reduces the high end so no duplcates are tested
+        reduction += 1
+        for num_b in range(new_high, low_val - 1, -1):
             iterations += 1
             test_num = num_a * num_b
             if is_palindrome(test_num):
@@ -53,3 +57,27 @@ palindrome(100, 999)
 
 # Look at it from another point of view. What if we create a list of all permutations of palindromes between
 # 998,001 (999 * 999) and 10000 (100 * 100). Then see if each palindrome is divisible by two 3-digit numbers.
+
+# create list of all palindromes within a specified range
+def palindrome_list(low_num, high_num):
+    new_list = []
+    for num in range(high_num, low_num-1, -1):
+        if is_palindrome(num):
+            new_list.append(num)
+    return new_list
+
+# check each number in that list to see if it is the product of two 3-digit numbers
+def is_product(test_num, low_val, high_val):
+    for value in range(high_val, low_val -1, -1):
+        if test_num % value == 0:
+            if test_num / value >= low_val and test_num / value <= high_val:
+                return True
+        else:
+            continue
+    return False
+
+
+start_time1 = time.time()
+product_list = [num for num in palindrome_list(10000, 998001) if is_product(num, 100, 999)]
+print(max(product_list))
+print(f"Time to complete: {time.time() - start_time1}")
