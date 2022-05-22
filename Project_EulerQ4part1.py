@@ -40,7 +40,7 @@ def palindrome(low_val, high_val):
     reduction = 0
     for num_a in range(high_val, low_val - 1, -1):
         new_high = high_val - reduction  
-        # Each time the second loop starts it reduces the high end so no duplcates are tested
+        # Each time the second loop starts it reduces the high value so no duplicates are tested
         reduction += 1
         for num_b in range(new_high, low_val - 1, -1):
             iterations += 1
@@ -70,7 +70,7 @@ def palindrome_list(low_num, high_num):
 def is_product(test_num, low_val, high_val):
     for value in range(high_val, low_val -1, -1):
         if test_num % value == 0:
-            if test_num / value >= low_val and test_num / value <= high_val:
+            if low_val <= test_num / value <= high_val:
                 return True
         else:
             continue

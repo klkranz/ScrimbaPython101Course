@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Added NetworkChuck1.py from Network Chuck's videos on Python to play along">
+    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Adding part 2 to Project_EulerQ4part1.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Euler_His_Solutions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Euler_His_Solutions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_EulerQ4part1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_EulerQ4part1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +49,8 @@
       <recent name="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Project_EulerQ4part1">
-    <configuration name="Project_Crypto_Machine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Euler_His_Solutions">
+    <configuration name="Euler_His_Solutions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -61,7 +62,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project_Crypto_Machine.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Euler_His_Solutions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Euler_His_Solutions" />
         <item itemvalue="Python.Project_EulerQ4part1" />
         <item itemvalue="Python.TestingRandomBits" />
         <item itemvalue="Python.Project_Marble_Betting_Game" />
         <item itemvalue="Python.Project_Math_Tutor" />
-        <item itemvalue="Python.Project_Crypto_Machine" />
       </list>
     </recent_temporary>
   </component>
