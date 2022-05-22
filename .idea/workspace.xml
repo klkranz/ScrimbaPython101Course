@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Adding part 2 to Project_EulerQ4part1.py">
+    <list default="true" id="85fece90-7134-450b-a15c-4d65793f047d" name="Changes" comment="Completed Course but may continue to play with exercises">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Euler_His_Solutions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Euler_His_Solutions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_EulerQ4part1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_EulerQ4part1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetworkChuck1.py" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkChuck1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <recent name="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Euler_His_Solutions">
+  <component name="RunManager" selected="Python.NetworkChuck1">
     <configuration name="Euler_His_Solutions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,6 +62,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Euler_His_Solutions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NetworkChuck1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NetworkChuck1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,27 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Project_Math_Tutor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\sheea\PycharmProjects\ScrimbaPython101Course\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project_Math_Tutor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestingRandomBits" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.NetworkChuck1" />
         <item itemvalue="Python.Euler_His_Solutions" />
         <item itemvalue="Python.Project_EulerQ4part1" />
         <item itemvalue="Python.TestingRandomBits" />
         <item itemvalue="Python.Project_Marble_Betting_Game" />
-        <item itemvalue="Python.Project_Math_Tutor" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653181227346</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completed Course but may continue to play with exercises">
+      <created>1653192272655</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653192272655</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,6 +307,7 @@
     <MESSAGE value="Project_Marble_Betting_Game.py refactoring after seeing his solution, and asking for more input from user." />
     <MESSAGE value="Edits to Project_EulerQ4part1.py and added his solution" />
     <MESSAGE value="Added NetworkChuck1.py from Network Chuck's videos on Python to play along" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NetworkChuck1.py from Network Chuck's videos on Python to play along" />
+    <MESSAGE value="Completed Course but may continue to play with exercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Course but may continue to play with exercises" />
   </component>
 </project>
